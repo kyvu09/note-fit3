@@ -1,0 +1,120 @@
+<div class="reader-root">
+  <list class="reader-list">
+    <!-- Khoảng đệm an toàn viền cong 2.5D phía trên -->
+    <list-item class="safe-top-item">
+      <div class="safe-top-box"></div>
+    </list-item>
+
+    <!-- Thanh điều khiển trên cùng: Quay lại, Cỡ chữ A-/A+ -->
+    <list-item class="top-bar-item">
+      <div class="top-bar-row">
+        <div class="btn-back" onclick="goBack">
+          <text class="btn-back-text">« Mục lục</text>
+        </div>
+        <div class="btn-font" onclick="smallerFont">
+          <text class="btn-small-text">A-</text>
+        </div>
+        <div class="btn-font" onclick="largerFont">
+          <text class="btn-small-text">A+</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Toàn bộ các dòng của Tiêu đề (1 dòng = 1 list-item, không cắt chữ) -->
+    <list-item class="title-line-item" for="{{ titleLines }}">
+      <div class="title-line-box">
+        <text class="title-text-small" if="{{ isSmallFont }}">{{ $item }}</text>
+        <text class="title-text-mid" if="{{ isMidFont }}">{{ $item }}</text>
+        <text class="title-text-large" if="{{ isLargeFont }}">{{ $item }}</text>
+      </div>
+    </list-item>
+
+    <!-- Dòng thông tin thống kê trang & dòng hiện tại -->
+    <list-item class="info-bar-item">
+      <div class="info-bar-box">
+        <text class="info-bar-text">{{ pageInfoText }}</text>
+      </div>
+    </list-item>
+
+    <!-- Thanh chuyển trang nhanh phía trên (khi dài hơn 1 trang) -->
+    <list-item class="nav-top-item" if="{{ hasMultiplePages }}">
+      <div class="nav-row">
+        <div class="nav-btn" onclick="prevPage">
+          <text class="nav-btn-text">« Trước</text>
+        </div>
+        <div class="nav-page-badge">
+          <text class="nav-page-text">{{ pageShortText }}</text>
+        </div>
+        <div class="nav-btn" onclick="nextPage">
+          <text class="nav-btn-text">Sau »</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Nội dung chính: Mỗi dòng 1 list-item, tràn chiều rộng tối ưu 408px AMOLED -->
+    <list-item class="body-line-item" for="{{ pageLines }}">
+      <div class="body-line-box">
+        <text class="body-text-small" if="{{ isSmallFont }}">{{ $item }}</text>
+        <text class="body-text-mid" if="{{ isMidFont }}">{{ $item }}</text>
+        <text class="body-text-large" if="{{ isLargeFont }}">{{ $item }}</text>
+      </div>
+    </list-item>
+
+    <!-- Dòng đánh dấu hết trang / hết bài -->
+    <list-item class="end-mark-item">
+      <div class="end-mark-box">
+        <text class="end-mark-text">{{ endOfPageText }}</text>
+      </div>
+    </list-item>
+
+    <!-- Thanh chuyển trang phía dưới -->
+    <list-item class="nav-bottom-item" if="{{ hasMultiplePages }}">
+      <div class="nav-row">
+        <div class="nav-btn" onclick="prevPage">
+          <text class="nav-btn-text">« Trước</text>
+        </div>
+        <div class="nav-page-badge">
+          <text class="nav-page-text">{{ pageShortText }}</text>
+        </div>
+        <div class="nav-btn" onclick="nextPage">
+          <text class="nav-btn-text">Sau »</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Hàng nút nhảy nhanh Đầu / -5 / +5 / Cuối cho tài liệu siêu dài -->
+    <list-item class="jump-bar-item" if="{{ hasMultiplePages }}">
+      <div class="jump-row">
+        <div class="jump-btn" onclick="firstPage">
+          <text class="jump-btn-text">Đầu</text>
+        </div>
+        <div class="jump-btn" onclick="jumpBack5">
+          <text class="jump-btn-text">-5 tr</text>
+        </div>
+        <div class="jump-btn" onclick="jumpForward5">
+          <text class="jump-btn-text">+5 tr</text>
+        </div>
+        <div class="jump-btn" onclick="lastPage">
+          <text class="jump-btn-text">Cuối</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Thanh thao tác cuối bài (gọn nhẹ: Mục lục + Xóa bài, đã bỏ Viết tiếp) -->
+    <list-item class="actions-item">
+      <div class="actions-row">
+        <div class="action-btn-home" onclick="goBack">
+          <text class="action-home-text">« Mục lục</text>
+        </div>
+        <div class="action-btn-del" onclick="handleDeleteTap">
+          <text class="action-del-text">{{ deleteBtnText }}</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Khoảng đệm an toàn cho 2 góc bo cong phía dưới (408x480 2.5D) -->
+    <list-item class="safe-bottom-item">
+      <div class="safe-bottom-box"></div>
+    </list-item>
+  </list>
+</div>

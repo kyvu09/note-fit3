@@ -1,0 +1,63 @@
+# ==========================================
+# 1. CHỨNG CHỈ KÝ & KHÓA BẢO MẬT (KHÔNG PUSH LÊN GIT)
+# ==========================================
+/signing/
+*.p12
+*.jks
+*.keystore
+*.csr
+*.cer
+*.p7b
+*.pem
+*.key
+.env
+*.local.env
+/entry/src/main/js/MainAbility/common/sync_config.js
+/android-sender/app/src/main/java/com/kyvu/fit3notessender/SyncConfig.java
+
+# ==========================================
+# 2. FILE THÀNH PHẨM ĐÃ BIÊN DỊCH / KÝ
+# ==========================================
+*.hap
+*.app
+*.bin
+*.apk
+*.apk.idsig
+*.aab
+*.dex
+
+# ==========================================
+# 3. HARMONYOS / DEVECO STUDIO / HVIGOR
+# ==========================================
+/node_modules
+/oh_modules
+/local.properties
+/.idea
+/.hvigor
+/.cxx
+/.clangd
+/.clang-format
+/.clang-tidy
+/.appanalyzer
+**/build
+**/.preview
+**/.test
+*.iml
+
+# ==========================================
+# 4. ANDROID STUDIO / GRADLE / CLI BUILD
+# ==========================================
+/android-sender/.gradle/
+/android-sender/build_cli/
+/android-sender/local.properties
+/android-sender/.idea/
+/android-sender/**/build/
+
+# ==========================================
+# 5. FILE TẠM HỆ ĐIỀU HÀNH & LOG
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp

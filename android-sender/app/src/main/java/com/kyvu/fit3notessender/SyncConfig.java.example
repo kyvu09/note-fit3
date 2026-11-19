@@ -1,0 +1,8 @@
+package com.kyvu.fit3notessender;
+
+// File mẫu cấu hình kênh đồng bộ cho Android.
+// Khi chạy build-android-apk.ps1, file SyncConfig.java thật sẽ tự động được sinh từ .env (không commit lên Git).
+public final class SyncConfig {
+    public static final String CHANNEL_PREFIX = "f3n_change_me_secret_channel";
+    public static final String RELAY_BASE = "https://ntfy.sh/";
+}

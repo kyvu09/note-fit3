@@ -1,0 +1,58 @@
+<div class="sync-root">
+  <list class="sync-list">
+    <!-- Khoảng đệm an toàn viền cong 2.5D phía trên -->
+    <list-item class="safe-top-item">
+      <div class="safe-top-box"></div>
+    </list-item>
+
+    <!-- Thanh tiêu đề & nút Quay lại / Tải mới -->
+    <list-item class="sync-top-item">
+      <div class="sync-top-row">
+        <div class="sync-back-btn" onclick="goBack">
+          <text class="sync-back-text">« Mục lục</text>
+        </div>
+        <div class="sync-rescan-btn" onclick="fetchLatestNote">
+          <text class="sync-rescan-text">↻ Tải mới</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Khung trạng thái tải & tiến độ ghép gói -->
+    <list-item class="sync-card-item">
+      <div class="sync-card">
+        <text class="sync-header-text">NHẬN TỪ ĐIỆN THOẠI</text>
+        <text class="sync-status-text">{{ statusTitle }}</text>
+        <text class="sync-progress-text">{{ progressText }}</text>
+        <text class="sync-sub-text">{{ subStatusText }}</text>
+      </div>
+    </list-item>
+
+    <!-- Nút mở đọc ngay khi vừa tải xong 100% -->
+    <list-item class="sync-open-item" if="{{ hasReceivedNote }}">
+      <div class="sync-open-btn" onclick="openReceivedNote">
+        <text class="sync-open-text">Đọc ngay: {{ receivedShortTitle }} »</text>
+      </div>
+    </list-item>
+
+    <!-- Nút tải ghi chú chính -->
+    <list-item class="sync-action-item">
+      <div class="sync-primary-btn" onclick="fetchLatestNote">
+        <text class="sync-primary-text">↓ Tải ghi chú mới từ ĐT</text>
+      </div>
+    </list-item>
+
+    <!-- Khung trạng thái kết nối -->
+    <list-item class="sync-diag-item">
+      <div class="sync-diag-card">
+        <text class="sync-diag-title">TRẠNG THÁI KẾT NỐI:</text>
+        <text class="sync-diag-line">{{ diagNetText }}</text>
+        <text class="sync-diag-sample">{{ diagDetailText }}</text>
+      </div>
+    </list-item>
+
+    <!-- Khoảng đệm an toàn cho 2 góc bo cong phía dưới (408x480 2.5D) -->
+    <list-item class="safe-bottom-item">
+      <div class="safe-bottom-box"></div>
+    </list-item>
+  </list>
+</div>

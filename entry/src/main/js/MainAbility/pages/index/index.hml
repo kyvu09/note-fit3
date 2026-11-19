@@ -1,0 +1,62 @@
+<div class="page-root">
+  <list class="main-list">
+    <!-- Khoảng đệm an toàn cho viền cong 2.5D phía trên -->
+    <list-item class="safe-top-item">
+      <div class="safe-top-box"></div>
+    </list-item>
+
+    <!-- Tiêu đề gọn nhẹ tối ưu AMOLED 408x480 -->
+    <list-item class="header-item">
+      <div class="header-box">
+        <text class="app-title">GHI CHÚ FIT 3</text>
+        <text class="app-subtitle">{{ summaryText }}</text>
+      </div>
+    </list-item>
+
+    <!-- Thanh công cụ 1 hàng duy nhất: Nhận từ ĐT + Đổi cỡ chữ -->
+    <list-item class="toolbar-item">
+      <div class="toolbar-row">
+        <div class="sync-btn" onclick="goSyncFromPhone">
+          <text class="sync-btn-text">↓ Nhận từ ĐT</text>
+        </div>
+        <div class="font-btn" onclick="cycleFontSize">
+          <text class="font-btn-text">{{ fontLabel }}</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Danh sách từng thẻ ghi chú -->
+    <list-item class="note-card-item" for="{{ noteCards }}" onclick="openNote($item.id)">
+      <div class="note-card">
+        <div class="note-meta-row">
+          <text class="note-badge">#{{ $item.orderNum }} • {{ $item.updatedAt }}</text>
+          <text class="note-stats">{{ $item.statsText }}</text>
+        </div>
+
+        <text class="note-title-line">{{ $item.titleLine1 }}</text>
+        <text class="note-title-line" if="{{ $item.hasTitleLine2 }}">{{ $item.titleLine2 }}</text>
+
+        <text class="note-preview-line">{{ $item.previewLine1 }}</text>
+        <text class="note-preview-line">{{ $item.previewLine2 }}</text>
+
+        <div class="note-open-row">
+          <text class="note-open-hint">{{ $item.bookmarkHint }}</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Chân trang: Khôi phục ghi chú gốc -->
+    <list-item class="footer-item">
+      <div class="footer-box">
+        <div class="reset-btn" onclick="resetNotes">
+          <text class="reset-btn-text">Khôi phục ghi chú gốc</text>
+        </div>
+      </div>
+    </list-item>
+
+    <!-- Khoảng đệm an toàn cho 2 góc bo cong phía dưới (408x480 2.5D) -->
+    <list-item class="safe-bottom-item">
+      <div class="safe-bottom-box"></div>
+    </list-item>
+  </list>
+</div>

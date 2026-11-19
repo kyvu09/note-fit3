@@ -1,0 +1,16 @@
+Hướng dẫn đọc ghi chú siêu dài trên Watch Fit 3 (Không bao giờ mất chữ)
+Chào mừng bạn đến với ứng dụng Ghi Chú Full-Text dành riêng cho Huawei Watch Fit 3!
+
+1. TẠI SAO CÁC APP KHÁC BỊ ẨN / CẮT CHỮ?
+Trên hệ điều hành Lite Wearable của đồng hồ Huawei, mỗi khung văn bản <text> và mỗi dòng <list-item> đều bị giới hạn kích thước khung cố định. Nếu đổ cả một đoạn văn dài vào một khung <text>, phần chữ tràn ra ngoài sẽ bị cắt cụt hoặc biến thành dấu ba chấm (...).
+
+2. CƠ CHẾ HIỂN THỊ 100% KHÔNG MẤT CHỮ CỦA APP NÀY:
+- Tự động đo độ rộng từng chữ cái tiếng Việt (kể cả chữ in hoa rộng như W, M, Đ, Ư, Ơ và dấu thanh).
+- Tự động tách văn bản dài thành từng dòng vừa khít màn hình 408x480px của Watch Fit 3.
+- Ngay cả một chuỗi ký tự liền nhau không có khoảng trắng như https://developer.huawei.com/consumer/en/doc/lite-wearable-full-text-reader cũng được tự động ngắt dòng an toàn mà không mất một ký tự nào!
+
+3. THAO TÁC KHI ĐỌC TRÊN ĐỒNG HỒ:
+- Vuốt lên/xuống hoặc xoay núm vặn (Crown) của Watch Fit 3 để cuộn đọc từng dòng mượt mà.
+- Bấm nút [A-] / [A+] ở thanh trên cùng để thu nhỏ hoặc phóng to cỡ chữ (Nhỏ 22px, Vừa 26px, To 30px). Khi đổi cỡ chữ, toàn bộ ghi chú sẽ tự động dàn trang lại ngay lập tức!
+- Bấm nút [Màu] để chuyển đổi giữa 3 giao diện: Đen AMOLED tiết kiệm pin, Vàng Dịu Mắt (Sepia) để đọc ban đêm, và Xanh Đêm.
+- Với các văn bản dài hàng nghìn từ, ứng dụng tự động chia thành từng Trang (35 dòng/trang) kèm nút [Trang trước] / [Trang sau] và tự động lưu lại trang bạn đang đọc dở!

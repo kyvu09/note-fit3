@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "Ghi Chú Fit3"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "Ứng dụng ghi chú hiển thị đầy đủ không cắt chữ cho Huawei Watch Fit 3"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "Ghi Chú Fit3"
+    }
+  ]
+}

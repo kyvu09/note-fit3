@@ -1,0 +1,12 @@
+Checklist công việc & lịch trình hằng ngày
+BUỔI SÁNG:
+- 06:30: Chạy bộ 5km & theo dõi nhịp tim trên Watch Fit 3.
+- 08:30: Họp sprint đầu tuần, rà soát các đầu việc quan trọng.
+- 10:00: Hoàn thiện tính năng hiển thị ghi chú đầy đủ cho đồng hồ.
+
+BUỔI CHIỀU:
+- 14:00: Kiểm tra bản build file .hap và cài qua DevEco Assistant.
+- 16:30: Tổng hợp tài liệu hướng dẫn sử dụng.
+
+BUỔI TỐI:
+- 20:00: Đọc sách / ôn tập ghi chú ngay trên cổ tay.

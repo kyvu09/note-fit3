@@ -1,0 +1,24 @@
+Bài kiểm tra văn bản cực dài (Nhiều chương & đoạn văn liên tục)
+--- PHẦN 1: KIỂM TRA ĐỘ DÀI KHÔNG GIỚI HẠN ---
+Đây là bài kiểm tra văn bản dài nhiều trang liên tiếp để bạn kiểm chứng trực tiếp trên mặt đồng hồ Huawei Watch Fit 3. Dù nội dung có kéo dài bao nhiêu dòng, bạn luôn có thể cuộn từ dòng đầu tiên đến dòng cuối cùng.
+
+--- PHẦN 2: KIỂM TRA TIẾNG VIỆT ĐẦY ĐỦ DẤU ---
+Trăm năm trong cõi người ta,
+Chữ tài chữ mệnh khéo là ghét nhau.
+Trải qua một cuộc bể dâu,
+Những điều trông thấy mà đau đớn lòng.
+Lạ gì bỉ sắc tư phong,
+Trời xanh quen thói má hồng đánh ghen.
+Cảo thơm lần giở trước đèn,
+Phong tình cổ lục còn truyền sử xanh.
+
+--- PHẦN 3: DANH SÁCH KIỂM TRA CHI TIẾT ---
+[01] Kiểm tra dòng tiêu đề dài không bị cắt dấu ba chấm.
+[02] Kiểm tra đoạn văn xuôi dài hàng trăm từ liên tục không xuống dòng vẫn tự động tách dòng chuẩn xác.
+[03] Kiểm tra các ký tự đặc biệt: @ # $ % & * ( ) _ + - = [ ] / ? ! : ; .
+[04] Kiểm tra dãy số dài liên tục: 0123456789012345678901234567890123456789.
+[05] Kiểm tra chuyển đổi cỡ chữ Nhỏ (22px) -> Vừa (26px) -> To (30px) không làm tràn khung ngang.
+[06] Kiểm tra chuyển trang mượt mà từ Trang 1 sang Trang 2, Trang 3 và tự động ghi nhớ vị trí trang đang đọc.
+
+--- PHẦN 4: ĐOẠN KẾT KIỂM TRA ---
+Nếu bạn đọc được dòng chữ cuối cùng này kèm mã xác nhận [HOÀN_TẤT_100%_KHÔNG_MẤT_CHỮ], nghĩa là toàn bộ văn bản từ đầu đến cuối đã được hiển thị trọn vẹn tuyệt đối trên đồng hồ của bạn!
